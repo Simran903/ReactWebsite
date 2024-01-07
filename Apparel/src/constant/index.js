@@ -2,10 +2,10 @@ import { facebook, instagram, shieldTick, support, truckFast, twitter } from "..
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#products", label: "Products" },
-    { href: "#contact-us", label: "Contact Us" },
+    { href: "#home", label: "Home", id:"1" },
+    { href: "#about-us", label: "About Us", id:"2" },
+    { href: "#products", label: "Products", id:"3" },
+    { href: "#contact-us", label: "Contact Us", id:"4" },
 ];
 
 export const shoes = [
@@ -24,9 +24,9 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: '2k+', label: 'Brands', id:"1" },
+    { value: '1000+', label: 'Shops', id:"2" },
+    { value: '300k+', label: 'Customers', id:"3" },
 ];
 
 export const products = [
