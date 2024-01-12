@@ -1,4 +1,3 @@
-import React from "react";
 import { navLinks } from "../constant";
 import { headerLogo } from "../assets/images";
 import { hamburger } from '../assets/icons'

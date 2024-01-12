@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../constant";
@@ -7,11 +6,11 @@ import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
 
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container border-2 border-blue-900"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
       <div
         className="relative
@@ -34,24 +33,24 @@ const Hero = () => {
         >
           <span
             className="xl:bg-white
-      xl:whitespace-nowrap xl:text-2xl 
-      relative z-10 pr-10"
+            xl:whitespace-nowrap
+            relative z-10 pr-10"
           >
             The New Arrival
-          </span>{" "}
+          </span>
           <br />
           <span className="text-blue-950 inline-block mt-3">Super value</span>
           deals
         </h1>
         <p
-          className="font-montserrat text-slate-gray text-lg leading-8 mt-6
-          mb-14 sm:max-w-sm"
+          className="font-montserrat text-slate-gray text-lg 
+          leading-8 mt-6 mb-14"
         >
           Discover stylish arrivals, quality comfort, and innovation for your
           active life.
         </p>
         <Button label="Shop Now" iconURL={arrowRight} />
-        <div className="flex justify-starts items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-center items-center flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat, index) => (
             <div key={stat.id}>
               <p
@@ -69,25 +68,36 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative flex-1 flex justify-center
+      <div
+        className="relative flex-1 flex justify-center
       items-center
       xl:min-h-screen
-      max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
-        <img src={bigShoeImg} alt="Apparel Collection" width={610}
+      max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
+      >
+        <img
+          src={bigShoeImg}
+          alt="Apparel Collection"
+          width={610}
           height={500}
-          className="object-contain relative z-10" />
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%]
-        sm:left-[10%] max-sm:px-6">
+          className="object-contain relative z-10"
+        />
+        <div
+          className="flex sm:gap-6 gap-4 absolute -bottom-[5%]
+        sm:left-[10%] max-sm:px-6"
+        >
           {shoes.map((image, index) => (
             <div key={index}>
               <ShoeCard
-                imgURL={image} changeBigShoeImg={(image) => { setBigShoeImg(image) }}
-                bigShoeImg={bigShoeImg} />
+                imgURL={image}
+                changeBigShoeImg={(image) => {
+                  setBigShoeImg(image);
+                }}
+                bigShoeImg={bigShoeImg}
+              />
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 };
