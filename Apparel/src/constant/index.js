@@ -1,5 +1,5 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2,cloth4 , cloth5, cloth6, cloth7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home", id:"1" },
@@ -31,24 +31,24 @@ export const statistics = [
 
 export const products = [
     {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        imgURL: cloth4,
+        name: "Marvel: Wakanda Heritage",
+        price: "₹ 1699",
     },
     {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        imgURL: cloth5,
+        name: "Pink Panther: Hustler",
+        price: "₹ 899",
     },
     {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        imgURL: cloth6,
+        name: "F.R.I.E.N.D.S: Doodles",
+        price: "₹ 1399",
     },
     {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        imgURL: cloth7,
+        name: "Stranger Things: Bicycles of Stranger Things",
+        price: "₹ 1199",
     },
 ];
 
@@ -73,13 +73,13 @@ export const services = [
 export const reviews = [
     {
         imgURL: customer1,
-        customerName: 'Morich Brown',
+        customerName: 'Rachel Green',
         rating: 4.5,
         feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
     },
     {
         imgURL: customer2,
-        customerName: 'Lota Mongeskar',
+        customerName: 'Joey Tribbiani',
         rating: 4.5,
         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
     }
@@ -88,18 +88,18 @@ export const reviews = [
 
 export const footerLinks = [
     {
-        title: "Products",
+        title: "OUR STORES",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Delhi", link: "/" },
+            { name: "Mumbai", link: "/" },
+            { name: "Bangalore", link: "/" },
+            { name: "Ahmedabad", link: "/" },
+            { name: "Haryana", link: "/" },
+            { name: "Indore", link: "/" },
         ],
     },
     {
-        title: "Help",
+        title: "HELP",
         links: [
             { name: "About us", link: "/" },
             { name: "FAQs", link: "/" },
@@ -109,9 +109,9 @@ export const footerLinks = [
         ],
     },
     {
-        title: "Get in touch",
+        title: "GET IN TOUCH",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+            { name: "customer@clothes.com", link: "mailto:customer@clothes.com" },
             { name: "+92554862354", link: "tel:+92554862354" },
         ],
     },

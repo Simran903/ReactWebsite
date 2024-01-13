@@ -1,5 +1,5 @@
 import { arrowRight } from "../assets/icons";
-import { shoe8 } from "../assets/images";
+import { cloth8 } from "../assets/images";
 import Button from "../components/Button";
 
 const SuperQuality = () => {
@@ -16,9 +16,7 @@ const SuperQuality = () => {
           Clothes
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
-          Ensuring premium comfort and style, our meticulously crafted footwear
-          is designed to elevate your experience, providing you with unmatched
-          quality, innovation, and a touch of elegance.
+        Indulge in unmatched quality! Our clothing is meticulously crafted with premium materials, ensuring durability and luxurious comfort. Each garment reflects our commitment to excellence, blending sophistication with enduring style. Elevate your wardrobe with pieces that embody the perfect fusion of craftsmanship and fashion-forward sensibility.
         </p>
         <p className="mt-6 lg:max-w-lg info-text">
           Our dedication to ensure detail and excellence ensures your
@@ -31,7 +29,7 @@ const SuperQuality = () => {
 
       <div className="flex-1 flex justify-center items-center">
         <img
-          src={shoe8}
+          src={cloth8}
           alt="Shoe8"
           width={570}
           height={522}
